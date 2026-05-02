@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="500" viewBox="0 0 1024 500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff8e7"/>
+      <stop offset="100%" stop-color="#ffe9c0"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="6"/>
+      <feOffset dx="0" dy="6" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.18"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1024" height="500" fill="url(#bg)"/>
+
+  <!-- Decorative card on right (the おみくじ result card) -->
+  <g filter="url(#shadow)">
+    <rect x="660" y="80" width="320" height="340" rx="28" fill="#ffffff"/>
+    <!-- Cat face (simplified) -->
+    <g transform="translate(820, 200)">
+      <!-- Ears -->
+      <path d="M -55 -5 L -45 -45 L -25 -15 Z" fill="#f5b53d"/>
+      <path d="M 55 -5 L 45 -45 L 25 -15 Z" fill="#f5b53d"/>
+      <path d="M -50 -10 L -42 -35 L -32 -18 Z" fill="#ffc4dc"/>
+      <path d="M 50 -10 L 42 -35 L 32 -18 Z" fill="#ffc4dc"/>
+      <!-- Face -->
+      <circle cx="0" cy="0" r="55" fill="#ffb84d"/>
+      <!-- Stripes on top -->
+      <path d="M -20 -40 q 5 -8 10 0" stroke="#e07c2f" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M 0 -45 q 5 -8 10 0" stroke="#e07c2f" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M -10 -42 q 5 -8 10 0" stroke="#e07c2f" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <!-- Eyes -->
+      <circle cx="-18" cy="-3" r="6" fill="#1a1a1a"/>
+      <circle cx="18" cy="-3" r="6" fill="#1a1a1a"/>
+      <!-- Nose -->
+      <path d="M -4 12 L 4 12 L 0 18 Z" fill="#e07c2f"/>
+      <!-- Mouth -->
+      <path d="M 0 18 q -6 8 -12 4" stroke="#1a1a1a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      <path d="M 0 18 q 6 8 12 4" stroke="#1a1a1a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      <!-- Whiskers -->
+      <line x1="-30" y1="10" x2="-55" y2="6" stroke="#999" stroke-width="2" stroke-linecap="round"/>
+      <line x1="-30" y1="16" x2="-58" y2="20" stroke="#999" stroke-width="2" stroke-linecap="round"/>
+      <line x1="30" y1="10" x2="55" y2="6" stroke="#999" stroke-width="2" stroke-linecap="round"/>
+      <line x1="30" y1="16" x2="58" y2="20" stroke="#999" stroke-width="2" stroke-linecap="round"/>
+    </g>
+    <!-- にゃん吉 label -->
+    <text x="820" y="320" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Yu Gothic, sans-serif" font-size="48" font-weight="700" fill="#eb2f96" text-anchor="middle">にゃん吉</text>
+    <text x="820" y="370" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Yu Gothic, sans-serif" font-size="20" fill="#666" text-anchor="middle">今日は猫に会えるかも</text>
+  </g>
+
+  <!-- Title -->
+  <text x="60" y="180" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Yu Gothic, sans-serif" font-size="84" font-weight="700" fill="#262626" letter-spacing="6">にゃん</text>
+  <text x="60" y="280" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Yu Gothic, sans-serif" font-size="84" font-weight="700" fill="#d4380d" letter-spacing="6">おみくじ</text>
+
+  <!-- Tagline -->
+  <text x="60" y="350" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Yu Gothic, sans-serif" font-size="26" fill="#595959">タップひとつで、今日の運勢を。</text>
+
+  <!-- Bottom accent line -->
+  <rect x="60" y="395" width="80" height="6" rx="3" fill="#d4380d"/>
+  <text x="60" y="440" font-family="Hiragino Sans, Hiragino Kaku Gothic ProN, Yu Gothic, sans-serif" font-size="18" fill="#8c8c8c">広告なし・データ収集なし・完全無料</text>
+</svg>
